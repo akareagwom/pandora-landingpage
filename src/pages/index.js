@@ -64,14 +64,14 @@ const Home = () => {
           <Container>
             <Flex px='100px'>
               <Heading fontSize={'1rem'} textAlign='center'>About Us</Heading>
-              <Icon color='white' as={AiFillInfoCircle}  src={about}/>
+              <Icon mt='3px' color='white' as={AiFillInfoCircle}  src={about}/>
             </Flex>
             <Text fontSize={'12px'}>Pandora's Box is a Ui/UX learning platform that offers a range of courses and quizzes to help users improve their skills. Users can track their progress and interact with a community of learners. </Text>
           </Container>
           <Container textAlign='center'>
            <Flex px='100px' >
             <Heading fontSize={'1rem'} textAlign='center'>Courses</Heading>
-            <Icon as={MdPlayLesson}/>
+            <Icon mt='3px' as={MdPlayLesson}/>
            </Flex>
             <Text fontSize={'12px'}>Are you interested in learning how to design beautiful, intuitive user interfaces that engage and delight users? Our platform offers a range of courses on UI/UX design that cover everything from the basics of design principles and user research to advanced topics like prototyping and user testing.
         </Text>
@@ -79,7 +79,7 @@ const Home = () => {
           <Container>
             <Flex px='100px'>
             <Heading fontSize={'1rem'} textAlign='center'>Quiz</Heading>
-            <Icon color='white' as={MdQuiz}/>
+            <Icon mt='3px' color='white' as={MdQuiz}/>
             </Flex>
             <Text fontSize={'12px'}>Looking to test your knowledge on UI/UX design? Our platform offers a comprehensive quiz that covers all aspects of user interface and user experience design. </Text>
           </Container>
