@@ -1,102 +1,124 @@
-import { AiOutlineMenu,AiFillInfoCircle } from "react-icons/ai";
-import {MdQuiz,MdPlayLesson} from "react-icons/md"
-import logo from '../assets/bg.png';
-import globe from '../assets/globe.png';
-import connect from '../assets/connect.png';
-import footlogo from '../assets/footlogo.png';
-import about from '../assets/about.png';
-import course from '../assets/course.png';
-import quiz from '../assets/quiz.png';
+import { AiFillInfoCircle } from "react-icons/ai";
+import { MdQuiz, MdPlayLesson } from "react-icons/md";
 
 import {
   Box,
   Button,
-  Container,
   Flex,
   Heading,
   Icon,
-  Text
-} from '@chakra-ui/react'
-import Image from "next/image";
+  Text,
+  Image,
+} from "@chakra-ui/react";
+
 const Home = () => {
-  return ( 
-    <>
-      <Box 
-      bg={'#CAC8C8'} 
-      h='50vh'
-      p='0'
-      fontFamily='Ubuntu'>
-        <Box px='30px' pt={'10px'}>
-            <Icon width='35px' h='20px' color={'#D76F22'} as={AiOutlineMenu}></Icon>
-        </Box>
-        <Flex>
-        <Container ml='100px'>
-          <Flex height='10px'>
-            <Box>
-              <Image src={logo} width={30} height={30} alt="" />
-            </Box>
-            <Box>
-              <Text fontSize={'15px'} lineHeight='30.58px' color='white'>Pandora's Box</Text>
-            </Box>
-          </Flex> 
-          <Box mt='25px'>
-            <Heading fontSize={'2rem'} color='white'>World-class</Heading>
-            <Heading fontSize={'1.5rem'} color={'#F78D2B'}>Digital Experience</Heading>
-            <Text fontSize={'12px'}>Enjoy world class experience using Pandora’s box. Learn design and test your knowledge without breaking a sweat</Text>
-            <Box mt='25px'>
-              <Button h='40px'fontSize={'15px'} w='223px' color={"white"} bgGradient='linear(to-r, #CB3068, #FD7F0B)'>Register Now</Button>
-            </Box>
+  return (
+    <Box w="100%" bg="black" overflow="hidden">
+      <Box
+        w="100%"
+        position={"relative"}
+        bg={"#CAC8C8"}
+        h="100vh"
+        pt="5%"
+        fontFamily="Ubuntu"
+        px={{ base: "5%", lg: "10%" }}
+      >
+        <Flex height="10px">
+          <Box>
+            <Image src={"bg.png"} width={30} height={30} alt="" />
           </Box>
-        </Container>
-        <Box position={"relative"} top='-120px' m='0' pr='15px'> 
-          <Box position={"relative"} top='1px'>
-            <Image alt="" h={'100px'}  width={300} height={300} src={connect}/>
+          <Box>
+            <Text ml={3} fontSize={"15px"} lineHeight="30.58px" color="white">
+              Pandora's Box
+            </Text>
           </Box>
-          <Box position={"absolute"} right={'100px'} top={'80px'}>
-            <Image alt="" width={200}  height={200} src={globe}/>
-          </Box>
-        </Box>
         </Flex>
-        
-      </Box>
-      <Box bgGradient='linear(to-l, #CB3068, #FD7F0B)' color={'white'}  h="50vh">
-      <Flex  p={'50px'} textAlign={'center'} >
-          <Container>
-            <Flex px='100px'>
-              <Heading fontSize={'1rem'} textAlign='center'>About Us</Heading>
-              <Icon mt='3px' color='white' as={AiFillInfoCircle}  />
-            </Flex>
-            <Text fontSize={'12px'}>Pandora's Box is a Ui/UX learning platform that offers a range of courses and quizzes to help users improve their skills. Users can track their progress and interact with a community of learners. </Text>
-          </Container>
-          <Container textAlign='center'>
-           <Flex px='100px' >
-            <Heading fontSize={'1rem'} textAlign='center'>Courses</Heading>
-            <Icon mt='3px' as={MdPlayLesson}/>
-           </Flex>
-            <Text fontSize={'12px'}>Are you interested in learning how to design beautiful, intuitive user interfaces that engage and delight users? Our platform offers a range of courses on UI/UX design that cover everything from the basics of design principles and user research to advanced topics like prototyping and user testing.
-        </Text>
-          </Container>
-          <Container>
-            <Flex px='100px'>
-            <Heading fontSize={'1rem'} textAlign='center'>Quiz</Heading>
-            <Icon mt='3px' color='white' as={MdQuiz}/>
-            </Flex>
-            <Text fontSize={'12px'}>Looking to test your knowledge on UI/UX design? Our platform offers a comprehensive quiz that covers all aspects of user interface and user experience design. </Text>
-          </Container>
-      </Flex>
-      <Flex justifyContent={'flex-end'} pb='' px='150px' >
-        <Box mr={'400px'}>
-          <Text fontSize={'12px'}>Contact us:01 26673 99, 01 26337 89</Text>
+        <Box mt={{ base: "30%", lg: "15%" }} maxW={{ base: "100%", lg: "50%" }}>
+          <Heading fontSize={"2rem"} color="white">
+            World-Class <Text color={"#F78D2B"}>Digital Experience</Text>
+          </Heading>
+          <Text mt="3%" fontSize={"12px"}>
+            Enjoy world class experience using Pandora’s box. Learn design and
+            test your knowledge without breaking a sweat
+          </Text>
+          <Box mt="3%">
+            <Button
+              h="40px"
+              fontSize={"15px"}
+              w="65%"
+              color={"white"}
+              bgGradient="linear(to-r, #CB3068, #FD7F0B)"
+            >
+              Register Now
+            </Button>
+          </Box>
         </Box>
-        <Box mt='-17px'>
-          <Image src={footlogo} alt="" width={20} height={20}/>
-          <Text fontSize={'12px'}>nHub Nigeria</Text>
+        <Box
+          position={"absolute"}
+          top="-15%"
+          right="-5%"
+          display={{ base: "none", lg: "flex" }}
+          flexDirection="column"
+        >
+          <Image alt="" w={"90%"} src={"connect.png"} />
+          <Image alt="asset" w={"60%"} src={"globe.png"} mt="-110%" />
         </Box>
-      </Flex>
       </Box>
-      
-    </>
-   );
-}
- 
+      <Box bgGradient="linear(to-l, #CB3068, #FD7F0B)" color={"white"} h="auto" py={8}>
+        <Flex p={"50px"} gap="50px" textAlign={"center"}>
+          <Box w="360px" >
+            <Flex justify="center" mb={4} >
+              <Heading fontSize={"1rem"} textAlign="center">
+                About Us
+              </Heading>
+              <Icon ml={2} mt="3px" color="white" as={AiFillInfoCircle} />
+            </Flex>
+            <Text textAlign="justify" fontSize={"12px"}>
+              Pandora's Box is a Ui/UX learning platform that offers a range of
+              courses and quizzes to help users improve their skills. Users can
+              track their progress and interact with a community of learners.{" "}
+            </Text>
+          </Box>
+          <Box w="360px" textAlign="center">
+            <Flex justify="center" mb={4} >
+              <Heading fontSize={"1rem"} textAlign="center">
+                Courses
+              </Heading>
+              <Icon ml={2} mt="3px" as={MdPlayLesson} />
+            </Flex>
+            <Text textAlign="justify" fontSize={"12px"}>
+              Are you interested in learning how to design beautiful, intuitive
+              user interfaces that engage and delight users? Our platform offers
+              a range of courses on UI/UX design that cover everything from the
+              basics of design principles and user research to advanced topics
+              like prototyping and user testing.
+            </Text>
+          </Box>
+          <Box w="360px">
+            <Flex justify="center" mb={4} >
+              <Heading fontSize={"1rem"} textAlign="center">
+                Quiz
+              </Heading>
+              <Icon ml={2} mt="3px" color="white" as={MdQuiz} />
+            </Flex>
+            <Text textAlign="justify" fontSize={"12px"}>
+              Looking to test your knowledge on UI/UX design? Our platform
+              offers a comprehensive quiz that covers all aspects of user
+              interface and user experience design.{" "}
+            </Text>
+          </Box>
+        </Flex>
+        <Flex justify={"space-between"} align="center" pb="" px="50px">
+          <Box>
+            <Text fontSize={"16px"}  >Contact us: +234 806 8640 710</Text>
+          </Box>
+          <Box >
+            <Image src={"footlogo.png"} alt="" width={20} />
+          </Box>
+        </Flex>
+      </Box>
+    </Box>
+  );
+};
+
 export default Home;
