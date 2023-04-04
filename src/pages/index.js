@@ -50,10 +50,10 @@ const Home = () => {
         </Container>
         <Box position={"relative"} top='-120px' m='0' pr='15px'> 
           <Box position={"relative"} top='1px'>
-            <Image h={'100px'}  width={300} height={300} src={connect}/>
+            <Image alt="" h={'100px'}  width={300} height={300} src={connect}/>
           </Box>
           <Box position={"absolute"} right={'100px'} top={'80px'}>
-            <Image width={200}  height={200} src={globe}/>
+            <Image alt="" width={200}  height={200} src={globe}/>
           </Box>
         </Box>
         </Flex>
@@ -64,7 +64,7 @@ const Home = () => {
           <Container>
             <Flex px='100px'>
               <Heading fontSize={'1rem'} textAlign='center'>About Us</Heading>
-              <Icon mt='3px' color='white' as={AiFillInfoCircle}  src={about}/>
+              <Icon mt='3px' color='white' as={AiFillInfoCircle}  />
             </Flex>
             <Text fontSize={'12px'}>Pandora's Box is a Ui/UX learning platform that offers a range of courses and quizzes to help users improve their skills. Users can track their progress and interact with a community of learners. </Text>
           </Container>
@@ -89,7 +89,7 @@ const Home = () => {
           <Text fontSize={'12px'}>Contact us:01 26673 99, 01 26337 89</Text>
         </Box>
         <Box mt='-17px'>
-          <Image src={footlogo} width={20} height={20}/>
+          <Image src={footlogo} alt="" width={20} height={20}/>
           <Text fontSize={'12px'}>nHub Nigeria</Text>
         </Box>
       </Flex>
