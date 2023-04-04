@@ -23,7 +23,7 @@ const Home = () => {
         w="100%"
         position={"relative"}
         bg={"#38346A"}
-        h="250vh"
+        h="220vh"
         pt="5%"
         fontFamily="Ubuntu"
         px={{ base: "5%", lg: "10%" }}
@@ -60,7 +60,7 @@ const Home = () => {
         </Box>
         <Box
           position={"absolute"}
-          top="-15%"
+          top="-13%"
           right="-5%"
           display={{ base: "none", lg: "flex" }}
           flexDirection="column"
