@@ -17,7 +17,7 @@ const Home = () => {
       <Box
         w="100%"
         position={"relative"}
-        bg={"#CAC8C8"}
+        bg={"#38346A"}
         h="100vh"
         pt="5%"
         fontFamily="Ubuntu"
