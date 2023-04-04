@@ -9,6 +9,8 @@ import {
   Icon,
   Text,
   Image,
+  Card,
+  CardBody,
 } from "@chakra-ui/react";
 
 const Home = () => {
@@ -64,7 +66,7 @@ const Home = () => {
           <Image alt="asset" w={"60%"} src={"globe.png"} mt="-110%" />
         </Box>
         <Box>
-          <Flex justify="center" mt={4} >
+          <Flex justify="center" mt={'15%'} >
               <Heading color={'#F67714'} fontSize={"1rem"} textAlign="center">
                 About Us
               </Heading>
@@ -72,6 +74,29 @@ const Home = () => {
           </Flex>
           <Text fontSize={"14px"} color={'white'}>Pandora's Box is a Ui/UX learning platform that offers a range of courses and quizzes to help users improve their skills. Users can track their progress and interact with a community of learners. With a user-friendly interface and engaging content, Pandora's Box is perfect for beginners and experienced designers alike.</Text>
         </Box>
+        <Flex justify={'center'} mt={'10%'} gap="50px">
+          <Card w="28%" textAlign={'center'} justify={'center'}>
+            <CardBody >
+              <Image src={"card1.png"} alt='asset'/>
+              <Heading fontSize={'1rem'}>UI/UX Courses</Heading>
+              <Text fontSize={'14px'}>We provide a vast array of UI/UX courses that are tailored to suit your needs and level of expertise.</Text>
+            </CardBody>
+          </Card>
+          <Card w="28%" textAlign={'center'} justify={'center'}>
+            <CardBody>
+              <Image src={"card2.png"} alt='asset'/>
+              <Heading fontSize={'1rem'}>UX Quization</Heading>
+              <Text fontSize={'14px'}>Put your knowledge to the test with our thought-provoking and engaging quiz questions.</Text>
+            </CardBody>
+          </Card>
+          <Card w="28%" textAlign={'center'} justify={'center'}>
+            <CardBody>
+              <Image src={"card3.png"} alt='asset'/>
+              <Heading fontSize={'1rem'}>SkillUp Tracker</Heading>
+              <Text fontSize={'14px'}>Elevate your UI/UX Proficiency with our User-Friendly Progress Monitoring Tool</Text>
+            </CardBody>
+          </Card>
+        </Flex>
       </Box>
       <Box bgGradient="linear(to-l, #CB3068, #FD7F0B)" color={"white"} h="auto" py={8}>
 
