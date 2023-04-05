@@ -20,10 +20,11 @@ const Home = () => {
   return (
     <Box w="100%" bg="black" overflow="hidden">
       <Box
+        
         w="100%"
         position={"relative"}
         bg={"#38346A"}
-        h="220vh"
+        h={{base:"auto", lg:"220vh"}}
         pt="5%"
         fontFamily="Ubuntu"
         px={{ base: "5%", lg: "10%" }}
@@ -81,28 +82,28 @@ const Home = () => {
           </Flex>
           <Text fontSize={"14px"} color={'white'}>Pandora's Box is a Ui/UX learning platform that offers a range of courses and quizzes to help users improve their skills. Users can track their progress and interact with a community of learners. With a user-friendly interface and engaging content, Pandora's Box is perfect for beginners and experienced designers alike.</Text>
         </Box>
-        <Flex flexWrap={{base:'wrap', lg:'nowrap'}} justify={'center'} mt={'10%'} gap="50px">
-          <Card w="30%" textAlign={'center'} justify={'center'}>
-            <CardBody px={'20%'} >
+        <Flex w={'100%'} display={{base:'inline-block', lg:'flex'}}  pb={{base:'20%',lg:'10%'}}  flexWrap={{base:'wrap', lg:'nowrap'}} mx={{base:'10%',lg:'auto'}} justify={{base:'center', lg:'center'}} mt={'10%'}>
+          <Card w={{base:"60%", lg:"30%"}} m={{base:'10%',lg:'auto'}} h={{base:"50%", lg:"auto"}} textAlign={'center'} justify={'center'}>
+            <CardBody px={'20%'}  >
               <Image  src={"card1.png"} alt='asset'/>
-              <Heading fontSize={'1rem'}>UI/UX Courses</Heading>
-              <Text fontSize={'14px'}>We provide a vast array of UI/UX courses that are tailored to suit your needs and level of expertise.</Text>
+              <Heading fontSize={{base:'14px', lg:"1rem"}}>UI/UX Courses</Heading>
+              <Text fontSize={{base:'12px', lg:'14px'}}>We provide a vast array of UI/UX courses that are tailored to suit your needs and level of expertise.</Text>
               <Box display={'flex'} justifyContent={'center'} borderBottom={'4px'} w={'20%'} borderRadius={'32.5167px'} borderColor={'#E99B00'} mx={'40%'} mt={'40px'}></Box>
             </CardBody>
           </Card>
-          <Card w="30%" textAlign={'center'} justify={'center'}>
-            <CardBody px={'20%'}>
+          <Card w={{base:"60%", lg:"30%"}} m={{base:'10%',lg:'auto'}} h={{base:"50%", lg:"auto"}} textAlign={'center'} justify={'center'}>
+            <CardBody px={'20%'} >
               <Image src={"card2.png"} alt='asset'/>
-              <Heading fontSize={'1rem'}>UX Quization</Heading>
-              <Text fontSize={'14px'}>Put your knowledge to the test with our thought-provoking and engaging quiz questions.</Text>
+              <Heading fontSize={{base:'14px', lg:"1rem"}}>UX Quization</Heading>
+              <Text fontSize={{base:'12px', lg:'14px'}}>Put your knowledge to the test with our thought-provoking and engaging quiz questions.</Text>
               <Box display={'flex'} justifyContent={'center'} borderBottom={'4px'} w={'20%'} borderRadius={'32.5167px'} borderColor={'#0E7886'} mx={'40%'} mt={'40px'}></Box>
             </CardBody>
           </Card>
-          <Card w="30%" textAlign={'center'} justify={'center'}>
-            <CardBody px={'20%'}>
+          <Card w={{base:"60%", lg:"30%"}} m={{base:'10%',lg:'auto'}} h={{base:"50%", lg:"auto"}} textAlign={'center'} justify={'center'}>
+            <CardBody px={'20%'} >
               <Image src={"card3.png"} alt='asset'/>
-              <Heading fontSize={'1rem'}>SkillUp Tracker</Heading>
-              <Text fontSize={'14px'}>Elevate your UI/UX Proficiency with our User-Friendly Progress Monitoring Tool</Text>
+              <Heading fontSize={{base:'14px', lg:"1rem"}}>SkillUp Tracker</Heading>
+              <Text fontSize={{base:'12px', lg:'14px'}}>Elevate your UI/UX Proficiency with our User-Friendly Progress Monitoring Tool</Text>
               <Box display={'flex'} justifyContent={'center'} borderBottom={'4px'} w={'20%'} borderRadius={'32.5167px'} borderColor={'#979695'} mx={'40%'} mt={'40px'} ></Box>
             </CardBody>
           </Card>
@@ -111,14 +112,14 @@ const Home = () => {
       <Box bgGradient="linear(to-l, #CB3068, #FD7F0B)" color={"white"} h="auto" py={8}>
         <Flex justify={'space-around'} p={'5'} w="100%">
           <Box w="20%">
-            <Text fontSize={"16px"}  >Contact us:</Text> 
-            <Text fontSize={"16px"}  >+234 806 8640 710</Text> 
+            <Text fontSize={{base:"12px", lg:"16px"}}  >Contact us:</Text> 
+            <Text fontSize={{base:"12px", lg:"16px"}}  >+234 806 8640 710</Text> 
           </Box>
           <Box w="20%">
-            <Text fontSize={"16px"}>  
+            <Text fontSize={{base:"12px", lg:"16px"}}>  
               Term and conditions
             </Text>
-            <Text fontSize={"16px"}>  
+            <Text fontSize={{base:"12px", lg:"16px"}}>  
               Privacy and policies
             </Text>
           </Box>
