@@ -28,6 +28,7 @@ const Home = () => {
         fontFamily="Ubuntu"
         px={{ base: "5%", lg: "10%" }}
       >
+        
         <Flex height="10px">
           <Box>
             <Image src={"bg.png"} width={30} height={30} alt="" />
@@ -56,6 +57,9 @@ const Home = () => {
             >
               Register Now
             </Button>
+          </Box>
+          <Box pos={'absolute'} zIndex={0} opacity={'10%'} top={'10%'}>
+            <Image src={"bg.png"} width={490}  alt="" />
           </Box>
         </Box>
         <Box
