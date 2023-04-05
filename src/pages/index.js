@@ -85,7 +85,7 @@ const Home = () => {
         <Flex w={'100%'} display={{base:'inline-block', lg:'flex'}}  pb={{base:'20%',lg:'10%'}}  flexWrap={{base:'wrap', lg:'nowrap'}} mx={{base:'10%',lg:'auto'}} justify={{base:'center', lg:'center'}} mt={'10%'}>
           <Card w={{base:"60%", lg:"30%"}} m={{base:'10%',lg:'auto'}} h={{base:"50%", lg:"auto"}} textAlign={'center'} justify={'center'}>
             <CardBody px={'20%'}  >
-              <Image  src={"card1.png"} alt='asset'/>
+              <Image px={'10%'}  src={"card1.png"} alt='asset'/>
               <Heading fontSize={{base:'14px', lg:"1rem"}}>UI/UX Courses</Heading>
               <Text fontSize={{base:'12px', lg:'14px'}}>We provide a vast array of UI/UX courses that are tailored to suit your needs and level of expertise.</Text>
               <Box display={'flex'} justifyContent={'center'} borderBottom={'4px'} w={'20%'} borderRadius={'32.5167px'} borderColor={'#E99B00'} mx={'40%'} mt={'40px'}></Box>
@@ -93,7 +93,7 @@ const Home = () => {
           </Card>
           <Card w={{base:"60%", lg:"30%"}} m={{base:'10%',lg:'auto'}} h={{base:"50%", lg:"auto"}} textAlign={'center'} justify={'center'}>
             <CardBody px={'20%'} >
-              <Image src={"card2.png"} alt='asset'/>
+              <Image px={'10%'} src={"card2.png"} alt='asset'/>
               <Heading fontSize={{base:'14px', lg:"1rem"}}>UX Quization</Heading>
               <Text fontSize={{base:'12px', lg:'14px'}}>Put your knowledge to the test with our thought-provoking and engaging quiz questions.</Text>
               <Box display={'flex'} justifyContent={'center'} borderBottom={'4px'} w={'20%'} borderRadius={'32.5167px'} borderColor={'#0E7886'} mx={'40%'} mt={'40px'}></Box>
@@ -101,7 +101,7 @@ const Home = () => {
           </Card>
           <Card w={{base:"60%", lg:"30%"}} m={{base:'10%',lg:'auto'}} h={{base:"50%", lg:"auto"}} textAlign={'center'} justify={'center'}>
             <CardBody px={'20%'} >
-              <Image src={"card3.png"} alt='asset'/>
+              <Image px={'10%'} src={"card3.png"} alt='asset'/>
               <Heading fontSize={{base:'14px', lg:"1rem"}}>SkillUp Tracker</Heading>
               <Text fontSize={{base:'12px', lg:'14px'}}>Elevate your UI/UX Proficiency with our User-Friendly Progress Monitoring Tool</Text>
               <Box display={'flex'} justifyContent={'center'} borderBottom={'4px'} w={'20%'} borderRadius={'32.5167px'} borderColor={'#979695'} mx={'40%'} mt={'40px'} ></Box>
