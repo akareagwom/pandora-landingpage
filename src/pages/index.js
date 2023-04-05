@@ -64,7 +64,7 @@ const Home = () => {
         </Box>
         <Box
           position={"absolute"}
-          top="-13%"
+          top="-10%"
           right="-5%"
           display={{ base: "none", lg: "flex" }}
           flexDirection="column"
@@ -109,7 +109,27 @@ const Home = () => {
         </Flex>
       </Box>
       <Box bgGradient="linear(to-l, #CB3068, #FD7F0B)" color={"white"} h="auto" py={8}>
-
+        <Flex justify={'space-around'} p={'5'} w="100%">
+          <Box w="20%">
+            <Text fontSize={"16px"}  >Contact us: +234 806 8640 710</Text> 
+          </Box>
+          <Box w="20%">
+            <Text fontSize={"16px"}>  
+              Term and conditions
+              Privacy and policies
+            </Text>
+          </Box>
+          <Box w="20%">
+          <Flex justify={'space-around'}>
+            <Image src={"Instagram.png"} width={30} border={'2px'} borderRadius={'50%'} m='0' p={0} />
+            <Image src={"Facebook.png"} width={30} border={'2px'} borderRadius={'50%'} m='0' p={0} />
+            <Image src={"Behance.png"} width={30} border={'2px'} borderRadius={'50%'} m='0' p={0} /> 
+          </Flex>
+          </Box>
+        </Flex>
+          <Box display={'flex'} >
+            <Image src={"footlogo.png"} alt="" width={20} />
+          </Box>
       </Box>
     </Box>
   );
