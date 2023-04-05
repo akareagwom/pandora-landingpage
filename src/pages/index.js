@@ -83,7 +83,7 @@ const Home = () => {
         </Box>
         <Flex flexWrap={{base:'wrap', lg:'nowrap'}} justify={'center'} mt={'10%'} gap="50px">
           <Card w="30%" textAlign={'center'} justify={'center'}>
-            <CardBody px={'10'} >
+            <CardBody px={'20%'} >
               <Image  src={"card1.png"} alt='asset'/>
               <Heading fontSize={'1rem'}>UI/UX Courses</Heading>
               <Text fontSize={'14px'}>We provide a vast array of UI/UX courses that are tailored to suit your needs and level of expertise.</Text>
@@ -91,7 +91,7 @@ const Home = () => {
             </CardBody>
           </Card>
           <Card w="30%" textAlign={'center'} justify={'center'}>
-            <CardBody px={'10'}>
+            <CardBody px={'20%'}>
               <Image src={"card2.png"} alt='asset'/>
               <Heading fontSize={'1rem'}>UX Quization</Heading>
               <Text fontSize={'14px'}>Put your knowledge to the test with our thought-provoking and engaging quiz questions.</Text>
@@ -99,7 +99,7 @@ const Home = () => {
             </CardBody>
           </Card>
           <Card w="30%" textAlign={'center'} justify={'center'}>
-            <CardBody px={'10'}>
+            <CardBody px={'20%'}>
               <Image src={"card3.png"} alt='asset'/>
               <Heading fontSize={'1rem'}>SkillUp Tracker</Heading>
               <Text fontSize={'14px'}>Elevate your UI/UX Proficiency with our User-Friendly Progress Monitoring Tool</Text>
@@ -111,11 +111,14 @@ const Home = () => {
       <Box bgGradient="linear(to-l, #CB3068, #FD7F0B)" color={"white"} h="auto" py={8}>
         <Flex justify={'space-around'} p={'5'} w="100%">
           <Box w="20%">
-            <Text fontSize={"16px"}  >Contact us: +234 806 8640 710</Text> 
+            <Text fontSize={"16px"}  >Contact us:</Text> 
+            <Text fontSize={"16px"}  >+234 806 8640 710</Text> 
           </Box>
           <Box w="20%">
             <Text fontSize={"16px"}>  
               Term and conditions
+            </Text>
+            <Text fontSize={"16px"}>  
               Privacy and policies
             </Text>
           </Box>
@@ -127,9 +130,9 @@ const Home = () => {
           </Flex>
           </Box>
         </Flex>
-          <Box display={'flex'} >
-            <Image src={"footlogo.png"} alt="" width={20} />
-          </Box>
+          <Flex justify={'flex-end'} px={'10%'} >
+            <Image src={"footlogo.png"} alt="" width={10} />
+          </Flex>
       </Box>
     </Box>
   );
